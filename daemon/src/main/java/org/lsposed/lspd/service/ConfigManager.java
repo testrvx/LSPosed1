@@ -906,7 +906,6 @@ public class ConfigManager {
     }
 
     public boolean isAddShortcut() {
-        Log.d(TAG, "Auto add shortcut=" + autoAddShortcut);
         return autoAddShortcut;
     }
 
