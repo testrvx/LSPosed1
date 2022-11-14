@@ -312,7 +312,7 @@ void Logcat::Run() {
         while (true) {
             if (android_logger_list_read(logger_list.get(), &msg) <= 0) [[unlikely]] break;
 
-            ProcessBuffer(&msg);
+            //ProcessBuffer(&msg);
 
             if (verbose_print_count_ >= kMaxLogSize) [[unlikely]] RefreshFd(true);
             if (modules_print_count_ >= kMaxLogSize) [[unlikely]] RefreshFd(false);
